@@ -1,0 +1,6 @@
+<h1>{{ result.title }}</h1>
+<p>{{ result.pub_date }}</p>
+<p>{{ result.body }}</p>
+<a href="{% url 'update' result.id %}">수정하기</a>
+<a href="{% url 'board' %}">BACK</a>
+ 
