@@ -7,3 +7,4 @@ class Signup(models.Model):
     std_num = models.CharField(max_length=50)
     major = models.CharField(max_length=100)
     name = models.CharField(max_length=200)
+    
