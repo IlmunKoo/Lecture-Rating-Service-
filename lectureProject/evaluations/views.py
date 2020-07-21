@@ -34,6 +34,9 @@ def lecture(request):
 
     return redirect('/')
 
+def show_lecture(request):
+    info_list = Lecture.objects.all()
+    return render(request, 'test.html',{'info': info_list})
 
-    
+
 
