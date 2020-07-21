@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'board',
+<<<<<<< HEAD
+=======
+    'evaluations',
+>>>>>>> fe1baab74121edeba541604e156b37983192e19c
 ]
 
 MIDDLEWARE = [
