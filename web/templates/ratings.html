@@ -1,0 +1,36 @@
+{%extends 'base.html'%}
+{%block content%}
+<h3>강의평가</h3>
+<br>
+<br>
+<br>
+<div class="input-group">
+    <select class="custom-select" id="inputGroupSelect04" style="background-color: #fafafa !important; width: 40%; height: 3rem !important;">
+        <option selected>강의 선택.</option>
+        {% for course in courses%}
+            <option value="{{course}}">{{course}}</option>
+        {%endfor%}
+    </select>
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" id="button-addon2" type="button">강의 평가하기</button>
+    </div>
+</div>
+<br>
+<br>
+<p style="color: grey; float: left;">최근 강의평</p>
+<br>
+<ul class="list-group list-group-flush" style="text-align: left;">
+    {% for rating in ratings %}
+    <div class="post-block">
+        <a href="{%url 'detail' post.id%}" class="activated">
+            <li class="list-group-item">
+                <span class="post-title">강의명</span>
+                <br>
+                <span class="post-body">강의평</span>
+            </li>
+        </a>
+    </div>
+    {% endfor %}
+</ul>
+
+{%endblock%}

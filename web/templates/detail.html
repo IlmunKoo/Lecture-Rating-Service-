@@ -1,0 +1,9 @@
+{%extends 'base.html'%}
+{%block content%}
+<h1>{{ post.title }}</h1>
+<p>{{ post.pub_date }}</p>
+<p>{{ post.body }}</p>
+<a href="">수정하기</a>
+<a href="{% url 'board' %}">BACK</a>
+
+{%endblock%}

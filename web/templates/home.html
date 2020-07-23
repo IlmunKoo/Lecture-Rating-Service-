@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+{%block content%}
+{% load static %}
+<!-- <h1 style="font-size: 2.5rem;">한국외국어대학교<br>강의포털</h1> -->
+<img src="{%static 'hufs.gif'%}" alt="HUFS LOGO">
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="input-group mb-3" style="display: inline block; float: center;">
+    <input type="text" class="form-control" name ="lecture_name" placeholder="강의명으로 찾기" aria-label="강의명으로 검색"
+        aria-describedby="button-addon2" style="background-color: #fafafa !important; width: 40%; height: 3rem !important;">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색하기</button>
+    </div>
+</div>
+{%endblock%}
+
