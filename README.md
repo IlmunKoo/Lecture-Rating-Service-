@@ -1,4 +1,5 @@
-# mini_hackathon
+# Lecture-Rating Service using Python Django   
+mini_hackathon   
 미니해커톤
 
 강의평가 서비스를 파이썬의 장고프레임워크를 사용해서 구현했습니다.
